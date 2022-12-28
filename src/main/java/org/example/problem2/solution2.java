@@ -1,6 +1,10 @@
-package org.example.solution2;
+package org.example.problem2;
 
-public class LinkedList {
+/*
+* Implement basic operations for a Linked List data structure
+* */
+
+public class solution2 {
 
     Node head;
 
@@ -148,7 +152,7 @@ public class LinkedList {
 
     public static void main(String[] args) {
 
-        LinkedList list = new LinkedList();
+        solution2 list = new solution2();
 
         list.append(16);
         list.append(31);
@@ -162,12 +166,12 @@ public class LinkedList {
 
         list.printList();
 
-        System.out.println("----------------------------------------------");
+        System.out.println("");
 
         list.deleteNode(31);
         list.printList();
 
-        System.out.println("----------------------------------------------");
+        System.out.println("");
 
         list.sortList();
         list.printList();
