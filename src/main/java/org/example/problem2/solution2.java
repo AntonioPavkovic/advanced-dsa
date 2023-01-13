@@ -8,15 +8,6 @@ public class solution2 {
 
     Node head;
 
-    static class Node {
-        int data;
-        Node next;
-        Node(int data) {
-            this.data = data;
-            this.next = null;
-        }
-    }
-
     /*
     * @param int data
     * method to insert a new node in a front of a list
