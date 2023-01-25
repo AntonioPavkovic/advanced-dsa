@@ -1,6 +1,4 @@
 package org.example.problem3;
-
-
 public class solution3 {
 
     Node root;
@@ -23,11 +21,11 @@ public class solution3 {
         }
     }
 
-    public void preorder(Node node) {
+    public void print(Node node) {
         if (node != null) {
             System.out.println(node.data + " ");
-            preorder(node.firstChild);
-            preorder(node.nextSibling);
+            print(node.firstChild);
+            print(node.nextSibling);
         }
     }
 
@@ -45,7 +43,7 @@ public class solution3 {
         binaryTree.addChild(binaryTree.root, new Node(24));
         binaryTree.addChild(binaryTree.root, new Node(55));
 
-        binaryTree.preorder(binaryTree.root);
+        binaryTree.print(binaryTree.root);
     }
 
 }
